@@ -29,7 +29,7 @@ Dino Game is a 2D running game where you control a dinosaur running through a de
 To run the Dino Game locally, follow these steps:
 
 1. **Clone the Repository:**
-   git clone https://github.com/yourusername/dino-game.git
+   git clone https://github.com/evinbsc/dino-game.git
    cd dino-game
 
 Install Dependencies:
