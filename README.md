@@ -1,6 +1,6 @@
 # Dino Game
 
-A simple and fun 2D running game inspired by the Google's Dino Game. The game involves a dinosaur running through a desert landscape, dodging cacti and flying birds to achieve a high score.
+A simple and fun 2D running game inspired by Google's Dino Game. The game involves a dinosaur running through a desert landscape, dodging cacti and flying birds to achieve a high score.
 
 ## Table of Contents
 
