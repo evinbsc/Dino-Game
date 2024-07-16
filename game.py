@@ -20,7 +20,7 @@ class Game:
         ]
 
         # Initialize game elements
-        self.dino = uvage.from_image(35, 370, self.dino_images[-1])
+        self.dino = uvage.from_image(35, 370, self.dino_images[0])
         self.current_frame = 0
 
         self.obstacles = []
@@ -49,14 +49,14 @@ class Game:
             if self.dino.y >= 370:
                 self.dino.speedy = 0
                 self.dino.move_speed()
-        if self.move_dino:
+
             self.current_frame += 0.8
             self.score += 0.25
-            if self.current_frame >= 4:
+            if self.current_frame >= len(self.dino_images):
                 self.current_frame = 0
-                self.dino.image = self.dino_images[int(self.current_frame)]
-            else:
-                self.dino.image = self.dino_images[-1]
+            self.dino.image = self.dino_images[int(self.current_frame)]
+        else:
+            self.dino.image = self.dino_images[-1]
 
     def manage_clouds(self):
         """
@@ -182,7 +182,3 @@ class Game:
         self.move_dino()
         self.camera.draw(self.dino)
         self.camera.display()
-
-if __name__ == "__main__":
-    game = Game()
-    uvage.timer_loop(30, game.tick)

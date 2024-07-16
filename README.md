@@ -1,6 +1,6 @@
 # Dino Game
 
-A simple and fun 2D running game inspired by the Google's Dino Game. The game involves a dinosaur running through a desert landscape, dodging cacti and flying birds to achieve a high score.
+A simple and fun 2D running game inspired by Google's Dino Game. The game involves a dinosaur running through a desert landscape, dodging cacti and flying birds to achieve a high score.
 
 ## Table of Contents
 
@@ -29,7 +29,7 @@ Dino Game is a 2D running game where you control a dinosaur running through a de
 To run the Dino Game locally, follow these steps:
 
 1. **Clone the Repository:**
-   git clone https://github.com/yourusername/dino-game.git
+   git clone https://github.com/evinbsc/dino-game.git
    cd dino-game
 
 Install Dependencies:
