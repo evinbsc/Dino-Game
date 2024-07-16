@@ -49,14 +49,14 @@ class Game:
             if self.dino.y >= 370:
                 self.dino.speedy = 0
                 self.dino.move_speed()
-
+        if self.move_dino:
             self.current_frame += 0.8
             self.score += 0.25
             if self.current_frame >= 4:
                 self.current_frame = 0
-            self.dino.image = self.dino_images[int(self.current_frame)]
-        else:
-            self.dino.image = self.dino_images[-1]
+                self.dino.image = self.dino_images[int(self.current_frame)]
+            else:
+                self.dino.image = self.dino_images[-1]
 
     def manage_clouds(self):
         """
